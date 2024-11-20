@@ -3,14 +3,14 @@ import google.generativeai as genai
 convoLines=5
 
 def AI1(pmt):
-    genai.configure(api_key="AIzaSyBi75WdmAtcV9qlyBYUb8mo_Xwxc_-DvY4")
+    genai.configure(api_key="key1")
 
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(pmt)
     return response.text
 
 def AI2(pmt):
-    genai.configure(api_key="AIzaSyB-Tc04NNO_BcV84JhdJy3BdEi2fsraK08")
+    genai.configure(api_key="key2")
 
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(pmt)
